@@ -1,0 +1,72 @@
+#div1{ width:300px;height: 420px;float:left;background-repeat:no-repeat;margin-left:250px;margin-right: 350px;}
+#div2{ width:300px;height: 420px;float:left;background-repeat:no-repeat;}
+#div3{ width:300px;height: 420px;float:left;background-repeat:no-repeat;margin-left:250px;margin-right: 350px;}
+#div7{ width:300px;height: 420px;float:left;background-repeat:no-repeat;}
+#div8{background-image:url(../img/校园20174.jpg); width:300px;height: 420px;float:left;background-repeat:no-repeat;margin-left:250px;margin-right: 350px;}
+#div9{background-image: url(../img/首页12.jpg);width:300px;height: 420px;float:left;background-repeat:no-repeat;}
+
+#div6{
+	background-image:url(../img/首页9.jpg);
+	width :100%;
+	height:550px;
+	position: relative;
+}
+
+
+
+
+
+#div4{background-image:url(../img/首页8.jpg);width:100%;height:100px;}
+#div41{float:left;margin:auto 50px;}
+#div42{float:left;margin:30px auto auto 600px;}
+#div43{float:left;margin-left: 350px;margin-top:70px;}
+#sp{font-size: 24px;font-weight:bold;}
+#div5{background-color:darkkhaki;width:100%px;height:80px;}
+a{text-decoration: none;}
+
+
+body,ul,li{
+				margin: 0;
+				padding:0;
+				list-style: none;
+			}
+			#div{
+				height:430px;
+				width: 1000px;
+				position: absolute;
+				margin-top:50px;
+				margin-left: 260px;
+			}
+		li{
+				height:430px;
+				width:1000px;
+				position: absolute;
+				opacity:0;
+				transition:1s;
+			}
+			li:first-child{
+				opacity:1;
+			}
+			.btn{
+			height:30px;
+			width:30px;	
+			background-color: burlywood;
+			position: absolute;
+			top:200px;
+			text-align:center;
+			cursor: pointer;
+			}
+			#next{
+				right:0;
+			}
+			img{
+				width:1000px;
+				height:430px;
+			}
+			
+input{
+	width: 20px;
+	height:20px;
+}
+
+

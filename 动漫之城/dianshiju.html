@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css"  rel="stylesheet"  href="./css/dianshiju.css">
+		<script  type="text/javascript" src="./js/dianshiju.js"></script>
+	</head>
+	<body onload="restart()">
+		
+		<div  style="background-color: #BDB76B;width:100%;height:100px;">
+			<table>
+				<tr>
+					<td><a href="zhuye.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;">首页</span></a></td>
+					<td><a href="dianying.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="movie"  >电影</span></a></td>
+					<td><a href="dianshiju.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="nolve" >电视剧</span></a></td>
+					<td><a href="tongnian.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="tongnian" >童年回忆</span></a></td>
+					<td><a href="#"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="zuixin" >最新</span></a></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div style="width: 50px;height:50px;position: absolute;z-index: 1;margin-left: 150px;margin-top: 230px;background-color: black;opacity: 0.7;">
+		   <span style="font-size:60px;color: white;font-weight: bold;display: block;margin-top:-18px;cursor:default" onclick="begin2()" onmouseover="pause()" onmouseout="restart()" ><</span>
+		</div>
+		<div style="width: 50px;height:50px;position: absolute;z-index: 1;margin-left: 1300px;margin-top: 230px;background-color: black;opacity: 0.7;">
+		   <span style="font-size:60px;color: white;font-weight: bold;display: block;margin-top:-18px;cursor:default" onclick="begin1()">></span>
+		</div>
+		
+		<div style="width:600px;height:400px;border: groove;float: left;position: absolute;z-index: 0;margin-left: 150px;margin-top: 50px;opacity: 0.5;" id="s11">
+			<img src="./img/电视剧1.jpg"  width="600px" height="400px" id="s1" />
+		</div>
+		<div style="width: 600px;height:400px;border: groove;float: left;position: absolute;z-index: 0;margin-left: 750px;margin-top: 50px;opacity: 0.5;" id="s22">
+			<img src="./img/电视剧3.jpg" width="600px"  height="400px" id="s2"/>
+		</div>
+		<div style="width:700px;height:450px;border: groove;position: absolute;z-index: 1;margin-left: 400px;margin-top:25px;" id="s33">
+			<img src="./img/电视剧2.jpg"  width="700px" height="450px" id="s3">
+		</div>
+	   
+		
+		<div  id="div3">
+			
+			`<div id="div31">
+				<span style="font-size: 30px;font-weight: bold;">版本</span>
+				<form>
+					<table>
+						<tr>
+							<td><input type="button" value="TV版"></td>
+							<td><input type="button" value="OVA版本" style="background-color: cyan;"></td>
+						</tr>
+						<tr>
+							<td><input type="button" value="剧场版" ></td>
+							<td><input type="button" value="真人版"</td>
+						</tr>
+						<tr>
+							<td><input type="button" value="特典版" style="background-color: crimson"></td>
+							<td><input type="button" value="宣传版"</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			
+			<div  id="div32">
+				<span style="font-size: 30px;font-weight: bold;">影片风格</span>
+				<form>
+					<table>
+						<tr>
+							<td><input type="button" value="热血"></td>
+							<td><input type="button" value="机战" style="background-color:  burlywood"></td>
+							<td><input type="button" value="运动"></td>
+							<td><input type="button" value="推理"></td>
+							<td><input type="button" value="冒险"></td>
+						</tr>
+						
+						<tr>
+							<td><input type="button" value="耽美"></td>
+							<td><input type="button" value="搞笑"></td>
+							<td><input type="button" value="战争"></td>
+							<td><input type="button" value="神魔"></td>
+							<td><input type="button" value="忍者" style="background-color: darkorange;"></td>
+						</tr>
+						
+						<tr>
+							<td><input type="button" value="竞技" style="background-color: chocolate;"></td>
+							<td><input type="button" value="悬疑"></td>
+							<td><input type="button" value="社会"></td>
+							<td><input type="button" value="萝莉"></td>
+							<td><input type="button" value="爱情"></td>
+						</tr>
+						
+						<tr>
+							<td><input type="button" value="宠物"></td>
+							<td><input type="button" value="校园"></td>
+							<td><input type="button" value="科幻"></td>
+							<td><input type="button" value="少女" style="background-color: deeppink;"></td>
+							<td><input type="button" value="后宫"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			
+			<div  id="div33">
+				<span style="font-size: 30px;font-weight: bold;">语言</span>
+				<form>
+					<table>
+						<tr>
+							<td><input type="button" value="日语"</td>
+						</tr>
+						<tr>
+							<td><input type="button" value="国语"</td>
+						</tr>
+						<tr>
+							<td><input type="button" value="英语"</td>
+						</tr>
+						<tr>
+							<td><input type="button" value="粤语"</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			
+			<div id="div34">
+				<span  style="font-size: 30px;font-weight: bold;">上映时间</span>
+				<form>
+					<table>
+						<tr>
+							<td><input type="button"  value="2017"></td>
+							<td><input type="button"  value="2016" style="background-color:  gold;"></td>
+							<td><input type="button"  value="2015"></td>
+						</tr>
+						<tr>
+							<td><input type="button"  value="2014"></td>
+							<td><input type="button"  value="2013"></td>
+							<td><input type="button"  value="2012"></td>
+						</tr>
+						<tr>
+							<td><input type="button"  value="2011"></td>
+							<td><input type="button"  value="2010"></td>
+							<td><input type="button"  value="2009" style="background-color: green;"></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<hr color="#FF0000" size="5" style="margin-top: 300px;">
+		</div>
+			
+			<div id="div4">
+				<table style="margin-top: 50px;margin-left: 100px;">
+					<tr>
+						<td style="padding-right:30px;width: 150px;height:30px;padding-left: 0px;" id="cc"><span style="font-size: 24px;font-weight: bold;" onmouseout="fang()" onmouseover="fangying()">正在热映中</span></td>
+						<td style="width: 150px;height:30px;"id="dd" ><span style="font-size: 24px;font-weight: bold;" onmouseover="fangying1()" onmouseout="fang1()">已完结片</span></td>
+					</tr>
+				</table>
+				<div id="div41">
+				<div  id="div42">
+					<img src="./img/搞笑20171.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/搞笑20172.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/搞笑20173.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/搞笑20174.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/励志20174.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/励志20171.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/励志20172.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/励志20173.jpg" width="300px" height="400px">
+				</div>
+				
+				<div  id="div43">
+					<img src="./img/励志20161.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/励志20162.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/励志20163.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/励志20164.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/搞笑20161.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/搞笑20162.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/搞笑20163.jpg" width="300px" height="400px" style="margin-right: 10px;">
+					<img src="./img/搞笑20164.jpg" width="300px" height="400px">
+				</div>
+				
+				</div>
+			</div>
+		<p style="font-size: 24px;text-align: center;"><i>心动，就漫上来！加入动漫，动漫你心！</i></p>
+		<hr color="aquamarine" size="3">
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#td1{
+				font-size: 24px;
+				color: white;
+				text-align: right;
+			}
+			td{
+				
+				width: 200px;
+			}
+		</style>
+		<script type="text/javascript">
+			function  jinru()
+			{
+				document.getElementById("j1").href="zhuye.html";
+			}
+			function $(id){
+				return document.getElementById(id);}
+			function checkcardno()
+			{
+				var cno=myform.cardno.value;
+				$("err_cardno").innerHTML="";
+				if(cno==""||cno==null)
+				{
+					$("err_cardno").innerHTML="用户名不能为空!";
+				}
+				else if(cno.length!=5)
+				{
+					$("err_cardno").innerHTML="用户名长度必须为5!";
+				}
+				else
+				{
+					var firstnum=cno.charAt(0);
+					if(firstnum=="0")
+					{
+						$("err_cardno").innerHTML="用户名开头不能为0!";
+					}
+				}
+			}
+			
+			function checkkey(){
+				var key1=myform.key.value;
+				$("err_key").innerHTML="";
+				if(key1==""||key1==null)
+				{
+					$("err_key").innerHTML="密码不能为空!";
+				}
+				else{
+					if(key1.length<6||key1.length>10)
+					{
+						$("err_key").innerHTML="密码长度不能小于6或大于10!";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div style="width: 100%;height: 700px;background-image: url(./img/登录1.jpg);position: absolute;z-index: 0;"></div>
+	      <div  style="width:500px;height:400px;position: absolute;z-index: 1;margin-top:200px;margin-left: 900px;padding-top:80px;" align="center">
+			<form name="myform">
+			<table  style="width:500px;height: 200px;text-align: center;">
+				<tr>
+					<td id="td1">用户名：</td>
+					<td id="td2"><input type="text" name="cardno" onblur="checkcardno()" style="width: 200px;height:20px;"></td>
+					<td><label id="err_cardno"></label></td>
+				</tr>
+				<tr>
+					<td id="td1">密&nbsp;&nbsp;&nbsp;&nbsp;码：</td>
+					<td id="td2"><input type="password" name="key" onblur="checkkey()" style="width: 200px;height:20px;"></td>
+					<td><label id="err_key"></label></td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<a href="#" id="j1"><input type="button" value="登录" style="margin-left: 30px;margin-right: 50px;width: 50px;height: 30px;" onclick="jinru()"></a>
+						<a href="zhuce.html"><input  type="button" value="注册" style="width: 50px;height: 30px;"></a>
+					</td>
+				</tr>
+			</table>	
+			</form>
+		</div>
+	</body>
+</html>

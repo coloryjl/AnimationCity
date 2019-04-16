@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link  type="text/css"  rel="stylesheet"  href="./css/zhuye.css" />
+		<script type="text/javascript" src="./js/zhuye.js"></script>
+	</head>
+	<body>
+		
+		<div id="div4">
+			<div id="div41">
+			<h1 align="left"><i>动漫之城</i></h1>
+			</div>
+			<div id="div42">
+			<form>
+				<input  type="text" style="width:200px;height:30px;" id="te"><a href="#" id="tee"><span id="sp" style="cursor: default;color: black;" onclick="tiao()" >搜索</span></a>
+			</form>
+				</div>
+				<div id="div43"><a href="denglu.html" style="text-decoration: none;color: black;font-size: 24px;font-weight: bold;">登录</a></div>
+		</div>
+		
+		
+	
+		<div id="div5">
+			<table>
+				<tr>
+					<td><a href="zhuye.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;">首页</span></a></td>
+					<td><a href="dianying.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="movie"  >电影</span></a></td>
+					<td><a href="dianshiju.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="nolve" >电视剧</span></a></td>
+					<td><a href="tongnian.html"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="tongnian" >童年回忆</span></a></td>
+					<td><a href="#"><span  style="font-size: 35px;font-weight: bold;padding: 30px;color: black;display: block;" id="zuixin" >最新</span></a></td>
+				</tr>
+			</table>
+		</div>
+		
+		
+		<div id="div6">
+		<div id="div" align="center">
+			<ul>
+				<li><img src="./img/首页3.jpg"></li>
+				<li><img src="./img/首页1.jpg"></li>
+				<li><img src="./img/首页2.jpg"</li>
+				<li><img src="./img/首页4.jpg"></li>
+				<li><img src="./img/首页5.jpg"></li>
+			</ul>
+			<div class="btn"  id="next"  onclick="show()"><span style="font-size: 30px;font-weight: bold;color: ;">></span></div>
+			<div  class="btn" id="prev"  onclick="show1()"><span style="font-size: 30px;font-weight: bold;"><</span></div>
+		</div>
+		</div>
+		
+		<h2 style="margin-top: 50px;margin-left: 100px;">热门的动画片</h2>
+		<hr color="#7FFF00" size="3">
+		
+		<form>
+			<table  style="margin-left:680px;">
+				<tr>
+					<td><input type="button" onclick="zhuan1()" id="b11" style="background-color: #7FFFD4;"></td>
+					<td><input type="button" onclick="zhuan2()" id="b22" style="background-color: #A9A9A9;"></td>
+					<td><input type="button" onclick="zhuan3()" id="b33" style="background-color: #A9A9A9;"></td>
+				</tr>
+			</table>
+		</form>
+		
+		<div style="width:1050px;height:300px;border: groove;margin-left: 230px;position:absolute;z-index: 0;overflow: hidden;">
+		</div>
+		
+		<div style="position: absolute;z-index: 3;margin-left: 230px;" id="z1">
+			<table>
+				<tr>
+					<td><a href="校园20171.html"><img src="./img/校园20171.jpg" style="width: 200px;height: 300px;margin-right:10px;"></a></td>
+					<td><a href="校园20172.html"><img src="./img/校园20172.jpg"   style="width: 200px;height: 300px;margin-right:10px;"></a></td>
+					<td><a href="校园20173.html"><img src="./img/校园20173.jpg" style="width: 200px;height: 300px;margin-right:10px;"></a></td>
+					<td><a href="校园20174.html"><img src="./img/校园20174.jpg" style="width: 200px;height: 300px;margin-right:8px;"></a></td>
+					<td><img src="./img/励志20161.jpg" style="width: 200px;height: 300px;"></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div style="position: absolute;z-index: 2;margin-left: 230px;" id="z2">
+			<table>
+				<tr>
+					<td><img src="./img/励志20154.jpg" style="width: 200px;height: 300px;margin-right:10px;"></td>
+					<td><img src="./img/励志20162.jpg" style="width: 200px;height: 300px;margin-right:10px;"></td>
+					<td><img src="./img/励志20163.jpg" style="width: 200px;height: 300px;margin-right:10px;"></td>
+					<td><img src="./img/励志20172.jpg" style="width: 200px;height: 300px;margin-right:8px;"></td>
+					<td><img src="./img/搞笑20152.jpg" style="width: 200px;height: 300px;"></td>
+				</tr>
+			</table>
+		</div>
+		
+		<div style="position: absolute;z-index: 1;margin-left: 230px;" id="z3">
+			<table>
+				<tr>
+					<td><img src="./img/搞笑20153.jpg" style="width: 200px;height: 300px;margin-right:10px;"></td>
+					<td><img src="./img/搞笑20174.jpg" style="width: 200px;height: 300px;margin-right:10px;"></td>
+					<td><img src="./img/搞笑20164.jpg" style="width: 200px;height: 300px;margin-right:10px;"></td>
+					<td><img src="./img/校园20164.jpg" style="width: 200px;height: 300px;margin-right:10px;"></td>
+					<td><img src="./img/校园20154.jpg" style="width: 200px;height: 300px;margin-right:8px;"></td>
+				</tr>
+			</table>
+		</div>
+		 
+		 <table style="margin-top: 350px;margin-left: 460px;">
+		 	<tr>
+		 		<td style="width: 200px;height: 30px;text-align: center;font-size: 24px;cursor: default;" onmouseover="xian1()" id="dd1">励志类</td>
+		 		<td style="width: 200px;height: 30px;text-align: center;font-size: 24px;cursor: default;" onmouseover="xian2()" id="dd2">搞笑类</td>
+		 		<td style="width: 200px;height: 30px;text-align: center;font-size: 24px;cursor: default;" onmouseover="xian3()" id="dd3">校园风</td>
+		 	</tr>
+		 </table>
+		 <hr color="#7FFF00" size="3">
+		 
+		 <div style="margin-left: 150px;position: absolute;z-index: 2;" id="d11">
+		 	<table>
+		 	<tr>
+		 		<td><img src="./img/励志20151.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20152.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20153.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20154.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20161.jpg" style="width: 250px;height: 350px;"></td>
+		 	</tr>
+		 	<tr>
+		 		<td><img src="./img/励志20171.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20172.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20173.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20174.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/励志20162.jpg" style="width: 250px;height: 350px;"></td>
+		 	</tr>
+		 	</table>
+		 </div>
+		 
+		  <div style="margin-left: 150px;position: absolute;z-index: 1;" id="d22">
+		 	<table>
+		 	<tr>
+		 		<td><img src="./img/搞笑20151.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20152.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20153.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20154.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20161.jpg" style="width: 250px;height: 350px;"></td>
+		 	</tr>
+		 	<tr>
+		 		<td><img src="./img/搞笑20162.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20163.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20164.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20171.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/搞笑20172.jpg" style="width: 250px;height: 350px;"></td>
+		 	</tr>
+		 	</table>
+		 </div>
+		 
+		  <div style="margin-left: 150px;position: absolute;z-index: 0;" id="d33">
+		 	<table>
+		 	<tr>
+		 		<td><img src="./img/校园20151.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20152.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20153.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20154.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20161.jpg" style="width: 250px;height: 350px;"></td>
+		 	</tr>
+		 	<tr>
+		 		<td><img src="./img/校园20162.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20163.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20164.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20171.jpg" style="width: 250px;height: 350px;"></td>
+		 		<td><img src="./img/校园20172.jpg" style="width: 250px;height: 350px;"></td>
+		 	</tr>
+		 	</table>
+		 </div>
+		 <hr color="#A9A9A9" size="3" style="margin-top: 800px;">
+		 <h2 align="center"><i>动&nbsp;&nbsp;漫&nbsp;&nbsp;之&nbsp;&nbsp;城</i></h2>
+		 <h3 align="center"><i>欢&nbsp;&nbsp;迎&nbsp;&nbsp;您</i></h3>
+		 <hr color="#A9A9A9" size="3" style="margin-bottom: 10px;">
+	</body>
+</html>
